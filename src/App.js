@@ -153,15 +153,13 @@ function App() {
                 ho.map((person) => <p key={uuidv4()}>{person}</p>)}
             </div>
           )}
-
-          <br />
-          <br />
         </div>
       </header>
     </div>
   );
 }
 
+// Get all url : (http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])
 // <label className="w-full pb-3 pt-3" htmlFor="description">HTML:</label>
 //          <p className="site-info-item">{siteUrl}</p>
 //         <div className="site-info-html">{siteHTML}</div>
