@@ -1,0 +1,262 @@
+   // Get HTML
+    chrome.runtime.onMessage.addListener(function (request, sender) {
+      if (request.action == "getSource") {
+        const message = request.source;
+        setSiteHTML(message);
+        setDescription(message);
+        console.log(message.match(/<p>(.*?)<\/p>/g));
+      }
+    });
+    chrome.tabs.executeScript(
+      null,
+      {
+        file: "getPagesSource.js",
+      },
+      function () {
+        // If you try and inject into an extensions page or the webstore/NTP you'll get an error
+        if (chrome.runtime.lastError) {
+          const message =
+            "There was an error injecting script : \n" +
+            chrome.runtime.lastError.message;
+          setSiteHTML(message);
+          setDescription(message);
+        }
+      }
+    );
+
+               <LinkPanel href="https://jira.adeo.no/plugins/servlet/desk" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Porten
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://navno.sharepoint.com/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Navet
+                </LinkPanel.Title>
+              </LinkPanel>
+
+              <LinkPanel href="https://mobapps.nav.no/Citrix/IKSS_MobappsWeb/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Applikasjoner
+                </LinkPanel.Title>
+              </LinkPanel>
+
+               {!siteUrl.match(/nav.no/) &&
+              <LinkPanel href="https://www.nav.no/no/person" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Nav.no
+                </LinkPanel.Title>
+              </LinkPanel>
+              }
+
+
+<Header.Title as="h1">NAV Snarveier</Header.Title>
+
+ <Accordion.Item>
+      <Accordion.Header id="myaccordion">
+        Verktøykassa
+      </Accordion.Header>
+      <Accordion.Content>
+              <LinkPanel href="https://identitet.nav.no/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Identitet
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://design.nav.no/designsystem" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Designsystem
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://navikt.github.io/uu/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Universell utforming
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://old-design-nav.vercel.app/god-praksis/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                God praksis
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://improved-train-2f244007.pages.github.io/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Security Champions
+                </LinkPanel.Title>
+              </LinkPanel>
+      </Accordion.Content>
+    </Accordion.Item>
+
+      <ul>
+        <li><Link href="https://behandlingskatalog.nais.adeo.no/#">Behandlingskatalogen</Link></li>
+        <li><Link href="https://etterlevelse.intern.nav.no/">Etterlevelse</Link></li>
+        <li><Link href="https://data.intern.nav.no/#">Datakatalog</Link></li>
+        <li><Link href="https://data.nav.no/?Tema=%5B%22Begreper%22%5D&sortKey=%22issued%22&sortOrder=%22desc%22">Begrepskatalog</Link></li>
+        <li><Link href="https://improved-train-2f244007.pages.github.io/">Security Champions Playbook</Link></li>
+        </ul>
+
+
+        <ul>
+        <li><Link href="https://analytics.amplitude.com/nav/workspace">Amplitude</Link></li>
+        <li><Link href="https://insights.hotjar.com/sites/148751/dashboard">Hotjar</Link></li>
+        <li><Link href="https://admin.taskanalytics.com/org/12559963/dashboard">Task Analytics</Link></li>
+        <li><Link href="https://my2.siteimprove.com/Auth/Saml2/6274809">Siteimprove</Link></li>
+        </ul>
+
+
+<ul>
+        <li><Link href="https://identitet.nav.no/">Identitet</Link></li>
+        <li><Link href="https://design.nav.no/designsystem">Designsystemet</Link></li>
+        <li><Link href="https://navikt.github.io/uu/">Universell utforming</Link></li>
+        <li><Link href="https://old-design-nav.vercel.app/god-praksis/">God praksis</Link></li>
+        <li><Link href="https://improved-train-2f244007.pages.github.io/">Security Champions Playbook</Link></li>
+        </ul>
+
+              <LinkPanel href="https://design.nav.no/god-praksis/side/webanalyseverktoy" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Analyseverktøy
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://design.nav.no/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Verktøykassa
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://dataplattform.gitbook.io/nada/kataloger" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Kataloger
+                </LinkPanel.Title>
+              </LinkPanel>
+
+                  <LinkPanel href="https://navno.sharepoint.com/" target="_blank" rel="noreferrer">
+    <LinkPanel.Title>
+    Navet
+    </LinkPanel.Title>
+  </LinkPanel>
+
+
+
+   <Accordion.Item>
+      <Accordion.Header id="myaccordion">
+        Kataloger
+      </Accordion.Header>
+      <Accordion.Content>
+              <LinkPanel href="https://teamkatalog.nais.adeo.no/#" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Teamkatalog
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://teknologiradaren.labs.nais.io/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Teknologiradaren
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://behandlingskatalog.nais.adeo.no/#" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Behandlingskatalogen
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://etterlevelse.intern.nav.no/" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Etterlevelse
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://data.intern.nav.no/#" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Datakatalog
+                </LinkPanel.Title>
+              </LinkPanel>
+              <LinkPanel href="https://data.nav.no/?Tema=%5B%22Begreper%22%5D&sortKey=%22issued%22&sortOrder=%22desc%22" target="_blank" rel="noreferrer">
+                <LinkPanel.Title>
+                Begrepskatalog
+                </LinkPanel.Title>
+              </LinkPanel>
+      </Accordion.Content>
+    </Accordion.Item>
+  </Accordion>
+
+  <LinkPanel href="https://admin.taskanalytics.com/org/12559963/dashboard" target="_blank" rel="noreferrer">
+        <LinkPanel.Title>
+        Task Analytics
+        </LinkPanel.Title>
+      </LinkPanel>
+
+
+            <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+        <LinkPanel.Title>
+        Rediger denne siden
+        </LinkPanel.Title>
+        <LinkPanel.Description>
+       Krever at du er <Link target="_blank" href="https://portal-admin.oera.no/admin/tool">innlogget i Enonic</Link>
+    </LinkPanel.Description>
+      </LinkPanel>
+
+
+
+  <Header.Button style={{ marginLeft: "auto" }}>
+  <Search
+    style={{ fontSize: "1.5rem" }}
+    title="Systemer og oppslagsverk"
+  />
+</Header.Button>
+
+
+
+      {/* 
+        <SearchField>
+  <SearchField.Input value={value} onChange={(e) => setValue(e.target.value)} />
+  {!!value && (
+    <SearchField.Clear onClick={() => setValue("")}>
+      <Close /> Tøm
+    </SearchField.Clear>
+  )}
+  <SearchField.Button>
+    <Search /> Søk
+  </SearchField.Button>
+</SearchField>
+
+/*}
+
+<Dropdown.Menu.GroupedList.Heading>
+          Systemer og oppslagsverk
+        </Dropdown.Menu.GroupedList.Heading>
+
+
+
+        {/*
+<div>
+<Button className="rediger" id="searchsuggestion" onClick={() => setValue("Analyse")}>Analyse</Button>
+<Button className="rediger" id="searchsuggestion" onClick={() => setValue("Design")}>Design</Button>
+<Button className="rediger" id="searchsuggestion" onClick={() => setValue("Katalog")}>Kataloger</Button>
+</div>
+*/}
+
+
+  {!value && !search && (
+    <SearchField.Clear onClick={() => setSearch("True")}>
+      <Filter />
+    </SearchField.Clear>
+  )}
+
+        <p class="navds-text-field__label navds-label">Søk etter verktøy eller <a onClick={() => setSearch("True")} class="navds-link">velg kategori</a>
+</p>
+
+{/*
+    <LinkPanel className="rediger" href="https://teamkatalog.nais.adeo.no/area/686e93e9-0fab-46d3-9a9c-975a8b502bed" target="_blank" rel="noreferrer">
+    <LinkPanel.Title>
+    Teamkatalogen
+    </LinkPanel.Title>
+    <LinkPanel.Description>
+    PO Pensjon
+    </LinkPanel.Description>
+    </LinkPanel>
+*/}
+
+          {/*
+          {error && !value &&
+              <Alert className="rediger" variant="error">
+                <Heading spacing size="small" level="3">
+                  Søkefeltet kan ikke være tomt. Forsøk å søke etter et verktøy.
+                </Heading>
+                <p>Dersom noe er uklart <Link target="_blank" href="https://forms.office.com/r/UyFMJsLfKM?lang=nb-NO">tips oss gjerne</Link> så forbedrer vi løsningen. Hilsen Team ResearchOps.</p>
+              </Alert>
+          }
+          */}

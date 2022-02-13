@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@navikt/ds-css": "^0.12.11-next.0",
+    "@navikt/ds-css-internal": "^0.7.0",
+    "@navikt/ds-icons": "^0.7.2",
+    "@navikt/ds-react": "^0.14.7",
+    "@navikt/ds-react-internal": "^0.9.7",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "uuid": "^8.3.2",
     "web-vitals": "^2.1.2"
   },
   "scripts": {

@@ -1,18 +1,18 @@
 {
-  "short_name": "Chrome App",
-  "name": "Chrome App",
+  "short_name": "NAV Verktøy",
+  "name": "NAV Verktøy",
   "icons": {
-    "16": "favicon.ico",
-    "48": "logo192.png",
-   "128": "logo512.png"
+    "16": "suitcase.png",
+    "48": "suitcase.png",
+   "128": "suitcase.png"
   },
   "permissions": [
-    "activeTab", "tabs", "<all_urls>"
+    "activeTab"
   ],
   "manifest_version": 2,
   "version": "0.0.1",
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "Chrome App",
-    "default_icon": "logo192.png"  }
+    "default_title": "NAV Verktøy",
+    "default_icon": "suitcase.png"  }
 }
