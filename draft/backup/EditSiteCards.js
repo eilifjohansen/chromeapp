@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "@navikt/ds-react";
+import { LinkPanel } from "@navikt/ds-react";
 import axios from 'axios';
 
 function EditSiteCars(props) {
@@ -86,37 +86,79 @@ function EditSiteCars(props) {
     })
     return (
         <>
+            {siteUrl.match(/deterdinpensjon.no/) &&
+                <LinkPanel className="rediger" href="https://www.deterdinpensjon.no/wp-login.php" target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Åpne siden i Wordpress
+                    </LinkPanel.Title>
+                </LinkPanel>
+            }
+
             {siteUrl.match('www.nav.no/sosialhjelp') &&
-                <li><Link target="_blank" href="https://sosialhjelp-veiviser.sanity.studio/production/desk" rel="noreferrer">Sanity</Link> (CMS-systemet)</li>
+                <LinkPanel className="rediger" href="https://sosialhjelp-veiviser.sanity.studio/production/desk" target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                    Åpne siden i Sanity
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteUrl.match('familie.nav.no') &&
-                <li><Link target="_blank" href="https://portal-admin.oera.no/admin/tool" rel="noreferrer">Enonic</Link> (krever at du er <Link target="_blank" href="https://portal-admin.oera.no/admin/tool">innlogget</Link>)</li>
-
+                <LinkPanel className="rediger" href="https://portal-admin.oera.no/admin/tool" target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                       Åpne siden i Enonic
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteUrl.match('www.nav.no/okonomi-og-gjeld') &&
-                <li><Link target="_blank" href="https://www.nav.no/okonomi-og-gjeld/studio/desk" rel="noreferrer">Sanity</Link> (CMS-systemet)</li>
+                <LinkPanel className="rediger" href="https://www.nav.no/okonomi-og-gjeld/studio/desk" target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Åpne siden i Sanity
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteUrl.match('www.nav.no/arbeid') &&
-                <li><Link target="_blank" href="https://nav-inkludering.sanity.studio/desk" rel="noreferrer">Sanity</Link> (CMS-systemet)</li>
+                <LinkPanel className="rediger" href="https://nav-inkludering.sanity.studio/desk" target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Åpne siden i Sanity
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteRedirectUrl && siteUrl.match(/www.nav.no/) && !siteUrl.match('no/arbeid') &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic</Link> (krever at du er <Link target="_blank" href="https://portal-admin.oera.no/admin/tool">innlogget</Link>)</li>
+                <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Åpne siden i Enonic
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteRedirectUrl && siteUrl.match('design.nav.no/designsystem') &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Sanity</Link> (CMS-systemet)</li>
+                <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Åpne siden i Sanity
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteUrl.match(/design.nav.no/) && !siteUrl.match('design.nav.no/designsystem') &&
-                <li><Link target="_blank" href="https://verktoykasse.sanity.studio/desk" rel="noreferrer">Sanity</Link> (CMS-systemet)</li>
+                <LinkPanel className="rediger" href="https://verktoykasse.sanity.studio/desk" target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Åpne siden i Sanity
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteRedirectUrl && siteUrl.match(/idebanken.org/) &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic</Link> (CMS-systemet)</li>
+                <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Åpne siden i Enonic
+                    </LinkPanel.Title>
+                    {/* <LinkPanel.Description>
+                        <Alert variant="info" inline size="small" >Krever at du er <Link target="_blank" href="https://idebanken-xp7prod.customer.enonic.io/admin/tool">innlogget i Enonic</Link></Alert>
+                    </LinkPanel.Description> */}
+                </LinkPanel>
             }
         </>
     );

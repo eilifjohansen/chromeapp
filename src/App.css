@@ -1,5 +1,6 @@
 html, body {
   background-color: #f1f1f1;
+  scrollbar-width: none;
 }
 
 /*
@@ -7,9 +8,19 @@ html, body {
   margin-bottom: 1.65rem;
 }*/
 
+.App { 
+  min-width: 400px;
+  max-width: 400px;
+ /* min-height: 240px; */
+}
+
 .cardsubtitle{
   margin-top: 0.75rem;
   margin-bottom: -0.5rem !important;
+}
+
+.cardsubtitlesolo{
+  margin-bottom: 0rem !important;
 }
 
 .cardsubtitle2{
@@ -33,17 +44,11 @@ html, body {
 
 .navds-search-field__clear-button {
   position: inherit;
-  width: 20px;
+  width: 150px;
 }
 
 .navds-search-field__clear-button:hover {
   color: white;
-}
-
-.App { 
-  min-width: 400px;
-  max-width: 400px;
- /* min-height: 240px; */
 }
 
 .site-info {
@@ -265,5 +270,6 @@ button span {
 }
 
 ul {
+  margin-top: 0.75rem;
   margin-bottom: 0.25rem;
 }
