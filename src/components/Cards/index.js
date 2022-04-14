@@ -8,7 +8,7 @@ function MyCards(props) {
             <NavAreaCards siteUrl={siteUrl} />
             <LovdataCards siteUrl={siteUrl} />
             <ToolInfoCards siteUrl={siteUrl} />
-            <RelatedAreaCards siteUrl={siteUrl} />
+            {/* <RelatedAreaCards siteUrl={siteUrl} /> */}
         </>
     );
 }

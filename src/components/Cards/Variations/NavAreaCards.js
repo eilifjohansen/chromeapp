@@ -14,8 +14,8 @@ function SiteAreaCards(props) {
                         <EditSiteLinks siteUrl={siteUrl} />
                         <HotjarLinks siteUrl={siteUrl} />
                     </ul>
-                    <Heading className="cardsubtitle" spacing size="xsmall" level="3">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} />
+                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="3">Snarveier</Heading>
+                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 

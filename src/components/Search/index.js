@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import JSONDATA from "./../../tools.json";
-import { LinkPanel, Link, Alert, Heading, SearchField } from "@navikt/ds-react";
+import { LinkPanel, Link, Alert, Heading, SearchField, Button } from "@navikt/ds-react";
 import { Search, Close } from "@navikt/ds-icons";
 
 function MySearch() {
@@ -52,6 +52,12 @@ function MySearch() {
             </SearchField>
           </form>
         </>
+      }
+      {!value && 
+<>
+<Button type="submit" size="small" className="rediger card__micro" value="#analyse" onClick={handleSearchChange}>Verktøy for innsiktsarbeid</Button>
+      {/* <Button type="submit" className="rediger" id="searchsuggestion" value="#team" onClick={handleSearchChange}>Verktøy for innsiktsarbeid</Button> */}
+     </>
       }
       {value && foundUsers && foundUsers.length > 0 ? (
         foundUsers.map((tool) => (
