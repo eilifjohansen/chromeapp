@@ -16,7 +16,7 @@ function LovdataCars(props) {
             {siteUrl.match('lovdata.no/nav/nav-loven') &&
                 <LinkPanel className="rediger" href="https://lovdata.no/pro/#document/NL/lov/2006-06-16-20" target="_blank" rel="noreferrer">
                     <LinkPanel.Title>
-                        Åpne i Lovdata Pro
+                        Åpne siden i Lovdata Pro
                     </LinkPanel.Title>
                 </LinkPanel>
             }
@@ -24,7 +24,7 @@ function LovdataCars(props) {
             {siteUrl.match('lovdata.no/nav/folketrygdloven') &&
                 <LinkPanel className="rediger" href="https://lovdata.no/pro/#document/NL/lov/1997-02-28-19" target="_blank" rel="noreferrer">
                     <LinkPanel.Title>
-                        Åpne i Lovdata Pro
+                        Åpne siden i Lovdata Pro
                     </LinkPanel.Title>
                 </LinkPanel>
             }
@@ -32,7 +32,7 @@ function LovdataCars(props) {
             {siteRedirectUrl && siteUrl.match('lovdata.no/dokument') &&
                 <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
                     <LinkPanel.Title>
-                        Åpne i Lovdata Pro
+                        Åpne siden i Lovdata Pro
                     </LinkPanel.Title>
                 </LinkPanel>
             }

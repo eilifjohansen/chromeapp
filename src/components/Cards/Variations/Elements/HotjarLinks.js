@@ -8,7 +8,11 @@ function HotjarLinks(props) {
     return (
         <>
             {siteUrl.match(/www.nav.no/) && !siteUrl.match('no/arbeid') &&
-                <li>Hotjar <Link target="_blank" href={hotjarHeatLink}>varmekart</Link> / <Link target="_blank" href={hotjarRecordingLink}>opptak</Link></li>
+                <>
+                    <li>Hotjar <Link target="_blank" href={hotjarHeatLink}>varmekart</Link> / <Link target="_blank" href={hotjarRecordingLink}>opptak</Link></li>
+                    {/* <li><Link target="_blank" href={hotjarHeatLink}>Hotjar varmekart</Link> </li>
+                    <li><Link target="_blank" href={hotjarRecordingLink}>Hotjar skjermopptak</Link></li> */}
+                </>
             }
         </>
     );

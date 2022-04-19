@@ -9,8 +9,8 @@ html, body {
 }*/
 
 .App { 
-  min-width: 400px;
-  max-width: 400px;
+  min-width: 384px;
+  max-width: 384px;
  /* min-height: 240px; */
 }
 
@@ -34,7 +34,7 @@ html, body {
 }
 
 .cardsubtitle{
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   margin-bottom: -0.5rem !important;
 }
 
@@ -58,7 +58,7 @@ html, body {
 }
 
 .navds-button--secondary:hover {
-  background-color: #262626;
+  background-color: #3f3f3f;
 }
 
 .navds-search-field__clear-button {
@@ -96,6 +96,11 @@ margin-top: 0px !important;
 .navds-search-field__input-wrapper>:last-child {
   background: #262626 !important;
 }
+
+.navds-search-field__input-wrapper>:last-child:hover {
+  background: #000 !important;
+}
+
 
 #myheader {
   padding: 0px !important;
@@ -142,7 +147,8 @@ margin-top: 0px !important;
     line-height: var(--navds-font-line-height-heading-medium);
 }
 
-#searchsuggestion {
+.searchsuggestion {
+  margin-bottom: 1.25rem;
   background-color: var(--navds-panel-color-background);
   padding: var(--navds-spacing-4);
   border-radius: 4px;
@@ -161,6 +167,10 @@ margin-top: 0px !important;
   font-size: var(--navds-font-size-heading-medium);
     letter-spacing: -0.002em;
     line-height: var(--navds-font-line-height-heading-medium);
+}
+
+.searchsuggestion:hover {
+  background-color: #ffd799 !important;
 }
 
 

@@ -8,18 +8,18 @@ function SiteAreaCards(props) {
         <>
             {siteUrl.match('www.nav.no') &&
                 <Panel border className="rediger">
-                    <CardHeading className="rediger" siteUrl={siteUrl} />
-                    <Heading className="cardsubtitle" spacing size="xsmall" level="3">Åpne siden i</Heading>
+                    {/* <CardHeading className="rediger" siteUrl={siteUrl} /> */}
+                    <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
                         <HotjarLinks siteUrl={siteUrl} />
                     </ul>
-                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="3">Snarveier</Heading>
+                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
                     <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
-{siteUrl.match('arbeidsplassen.nav') && !siteUrl.match('syk') &&
+            {siteUrl.match('arbeidsplassen.nav') && !siteUrl.match('syk') &&
                 <Panel border className="rediger">
                     <Heading spacing size="small" level="2">
                         <Link target="_blank" href="https://teamkatalog.nais.adeo.no/area/e168f684-f3ad-4f89-a73d-fac0d7cbbc68">PO Arbeid</Link>
@@ -29,23 +29,23 @@ function SiteAreaCards(props) {
                         <SiteimproveLinks siteUrl={siteUrl} />
                         <AmplitudeLinks siteUrl={siteUrl} />
                     </ul>
-                    <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} />
+                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
+                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
             {siteUrl.match('idebanken.org') &&
                 <Panel border className="rediger">
-                    <Heading spacing size="small" level="2">
+                    {/* <Heading spacing size="small" level="2">
                         <Link target="_blank" href="https://www.idebanken.org/kontakt-oss">Kommunikasjonsavdelingen</Link>
-                    </Heading>
+                    </Heading> */}
                     <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
                         <SiteimproveLinks siteUrl={siteUrl} />
                     </ul>
-                    <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} />
+                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
+                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
@@ -59,22 +59,22 @@ function SiteAreaCards(props) {
                         <li><Link target="_blank" href="https://www.deterdinpensjon.no/wp-login.php">WordPress</Link> (CMS-systemet)</li>
                         <SiteimproveLinks siteUrl={siteUrl} />
                     </ul>
-                    <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} />
+                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
+                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
             {siteUrl.match('aksel.nav.no') &&
                 <Panel border className="rediger">
-                    <Heading spacing size="small" level="2">
+                    {/* <Heading spacing size="small" level="2">
                         <Link target="_blank" href="https://teamkatalog.nais.adeo.no/team/602c8ad5-00b5-47cd-87a3-d19175397e23">Team Aksel/Designsystemet</Link>
-                    </Heading>
+                    </Heading> */}
                     <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
                     </ul>
-                    <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} />
+                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
+                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
         </>

@@ -87,36 +87,36 @@ function EditSiteCars(props) {
     return (
         <>
             {siteUrl.match('www.nav.no/sosialhjelp') &&
-                <li><Link target="_blank" href="https://sosialhjelp-veiviser.sanity.studio/production/desk" rel="noreferrer">Sanity</Link> (CMS-system)</li>
+                <li><Link target="_blank" href="https://sosialhjelp-veiviser.sanity.studio/production/desk" rel="noreferrer">Sanity CMS</Link></li>
             }
 
             {siteUrl.match('familie.nav.no') &&
-                <li><Link target="_blank" href="https://portal-admin.oera.no/admin/tool" rel="noreferrer">Enonic</Link> (CMS-system)</li>
+                <li><Link target="_blank" href="https://portal-admin.oera.no/admin/tool" rel="noreferrer">Enonic CMS</Link></li>
 
             }
 
             {siteUrl.match('www.nav.no/okonomi-og-gjeld') &&
-                <li><Link target="_blank" href="https://www.nav.no/okonomi-og-gjeld/studio/desk" rel="noreferrer">Sanity</Link> (CMS-system)</li>
+                <li><Link target="_blank" href="https://www.nav.no/okonomi-og-gjeld/studio/desk" rel="noreferrer">Sanity CMS</Link></li>
             }
 
             {siteUrl.match('www.nav.no/arbeid') &&
-                <li><Link target="_blank" href="https://nav-inkludering.sanity.studio/desk" rel="noreferrer">Sanity</Link> (CMS-system)</li>
+                <li><Link target="_blank" href="https://nav-inkludering.sanity.studio/desk" rel="noreferrer">Sanity CMS</Link></li>
             }
 
             {siteRedirectUrl && siteUrl.match(/www.nav.no/) && !siteUrl.match('no/arbeid') &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic</Link> (CMS-system)</li>
+                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic CMS</Link></li>
             }
 
             {siteRedirectUrl && siteUrl.match('aksel.nav.no/designsystem') &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Sanity</Link> (CMS-system)</li>
+                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Sanity CMS</Link></li>
             }
 
             {siteUrl.match(/aksel.nav.no/) && !siteUrl.match('aksel.nav.no/designsystem') &&
-                <li><Link target="_blank" href="https://verktoykasse.sanity.studio/desk" rel="noreferrer">Sanity</Link> (CMS-system)</li>
+                <li><Link target="_blank" href="https://verktoykasse.sanity.studio/desk" rel="noreferrer">Sanity CMS</Link></li>
             }
 
             {siteRedirectUrl && siteUrl.match(/idebanken.org/) &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic</Link> (CMS-system)</li>
+                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic CMS</Link></li>
             }
         </>
     );
