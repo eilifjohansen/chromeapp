@@ -78,10 +78,11 @@ function MySearch() {
 
       {search && !value &&
         <>
-          <div className="katalogwrapper"><Heading level="2" aria-live="polite" className="kataloglabel" size="medium">Kategorier</Heading></div>
+          <div className="katalogwrapper"><Heading level="2" aria-live="polite" className="kataloglabel" size="medium">3 kategorier</Heading></div>
           <Button type="submit" className="searchsuggestion" value="#analyse" onClick={setCategory}>Målinger</Button>
           <Button type="submit" className="searchsuggestion" value="#undersøkelse" onClick={setCategory}>Brukerinnsikt</Button>
           <Button type="submit" className="searchsuggestion" value="#team" onClick={setCategory}>Teamarbeid</Button>
+          {/* <Button type="submit" className="searchsuggestion" value="#katalog" onClick={setCategory}>NAVs kataloger</Button> */}
           <hr className="rediger" />
         </>
       }
@@ -89,7 +90,7 @@ function MySearch() {
       {value &&
         <div id="results">
           {searchActivate && value && foundUsers && foundUsers.length > 0 &&
-            <div className="katalogwrapper"><Heading level="2" aria-live="polite" className="kataloglabel" size="medium">Resultater</Heading></div>}
+            <div className="katalogwrapper"><Heading level="2" aria-live="polite" className="kataloglabel" size="medium"> {foundUsers.length} {foundUsers.length > 1 ? (<>resultater</>) : (<>resultat</>)}</Heading></div>}
           {value && foundUsers && foundUsers.length > 0 ? (
             foundUsers.map((tool) => (
               <LinkPanel key={tool.id} className="rediger" href={tool.link} target="_blank" rel="noopener noreferrer">

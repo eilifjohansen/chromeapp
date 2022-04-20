@@ -12,7 +12,9 @@ function SiteAreaCards(props) {
                     <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
+                        <li><Link target="_blank" href="https://my2.siteimprove.com/Dashboard/5765905975/21766831756/Dashboard/Index">Siteimprove kvalitetsjekk</Link></li>
                         <HotjarLinks siteUrl={siteUrl} />
+                        <li><Link target="_blank" href="https://analytics.eu.amplitude.com/nav/team-spaces">Amplitude webstatistikk</Link></li>
                     </ul>
                     {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
                     <Shortcuts siteUrl={siteUrl} /> */}
