@@ -1,0 +1,19 @@
+{
+    "categories": [
+        {
+            "id": "5920189",
+            "name": "Brukerinnsikt",
+            "slug": "#brukerinnsikt"
+        },
+        {
+            "id": "5920186",
+            "name": "Teamarbeid",
+            "slug": "#team"
+        },
+        {
+            "id": "59201845",
+            "name": "NAVs kataloger",
+            "slug": "#katalog"
+        }
+    ]
+}

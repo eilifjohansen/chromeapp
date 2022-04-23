@@ -74,6 +74,7 @@ function SiteAreaCards(props) {
                     <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
+                        <li><Link target="_blank" href="https://my2.siteimprove.com/Dashboard/5765905975/30048105178/Dashboard/Index">Siteimprove kvalitetsjekk</Link></li>
                     </ul>
                     {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
                     <Shortcuts siteUrl={siteUrl} /> */}

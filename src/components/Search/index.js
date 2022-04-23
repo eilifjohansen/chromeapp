@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import JSONDATA from "./../../tools.json";
+import CATEGORYDATA from "./../../category.json";
 import { LinkPanel, Link, Alert, Heading, SearchField, Button, Label } from "@navikt/ds-react";
 import { Search, Close } from "@navikt/ds-icons";
 
@@ -11,6 +12,7 @@ function MySearch() {
   const [error, setError] = useState("");
   const [errorclass, setErrorclass] = useState("navds-search-field__input navds-text-field__input navds-body-short navds-body-medium");
   const people = JSONDATA;
+  const category = CATEGORYDATA;
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -72,23 +74,26 @@ function MySearch() {
         <>
           <Button type="submit" size="xsmall" className="rediger card__micro" value="#analyse" onClick={() => setSearch("True") & setValue("") & setError("")}>Kategorier</Button>
           <Button type="submit" size="xsmall" className="rediger card__micro" value="#hjelpeartikler" onClick={setCategory}>Hjelpeartikler</Button>
-          <Button type="submit" size="xsmall" className="rediger card__micro" value="#katalog" onClick={setCategory}>Kataloger</Button>
+           {/* <Button type="submit" size="xsmall" className="rediger card__micro" value="#brukerinnsikt" onClick={setCategory}>Brukerinnsikt</Button> 
+           <Button type="submit" size="xsmall" className="rediger card__micro" value="#katalog" onClick={setCategory}>NAVs kataloger</Button>  */}
         </>
       }
 
       {search && !value &&
         <>
-          <div className="katalogwrapper"><Heading level="2" aria-live="polite" className="kataloglabel" size="medium">3 kategorier</Heading></div>
-          <Button type="submit" className="searchsuggestion" value="#analyse" onClick={setCategory}>Målinger</Button>
-          <Button type="submit" className="searchsuggestion" value="#undersøkelse" onClick={setCategory}>Brukerinnsikt</Button>
-          <Button type="submit" className="searchsuggestion" value="#team" onClick={setCategory}>Teamarbeid</Button>
-          {/* <Button type="submit" className="searchsuggestion" value="#katalog" onClick={setCategory}>NAVs kataloger</Button> */}
-          <hr className="rediger" />
+          <div className="rediger">
+            <div className="katalogwrapper"><Heading level="2" aria-live="polite" className="kataloglabel" size="medium">Kategorier</Heading></div>
+            {category.categories.map((category, i) => (
+              <div key={i}>
+                <Button type="submit" className="searchsuggestion" value={category.slug} onClick={setCategory}>{category.name}</Button>
+              </div>
+            ))}
+          </div>
         </>
       }
 
       {value &&
-        <div id="results">
+        <div className="rediger">
           {searchActivate && value && foundUsers && foundUsers.length > 0 &&
             <div className="katalogwrapper"><Heading level="2" aria-live="polite" className="kataloglabel" size="medium"> {foundUsers.length} {foundUsers.length > 1 ? (<>resultater</>) : (<>resultat</>)}</Heading></div>}
           {value && foundUsers && foundUsers.length > 0 ? (
@@ -120,7 +125,7 @@ function MySearch() {
         </div>
       }
 
-      {value && <hr className="rediger" />}
+      {/* {value && <hr className="rediger" />} */}
     </>
   );
 }
