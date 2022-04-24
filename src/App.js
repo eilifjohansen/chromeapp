@@ -1,6 +1,6 @@
 /*global chrome*/
 import React, { useEffect, useState } from "react";
-import { Header, Search, Cards, Footer } from "./components"
+import { Header, Search, Cards } from "./components"
 import "@navikt/ds-css";
 import "./App.css";
 
@@ -21,7 +21,6 @@ function App() {
       <div id="cards" className="site-info enonic">
         <Search />
         <Cards siteUrl={siteUrl} />
-        {/* <Footer /> */}
       </div>
     </div>
   );

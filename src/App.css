@@ -3,15 +3,9 @@ html, body {
   scrollbar-width: none;
 }
 
-/*
-#cards {
-  margin-bottom: 1.65rem;
-}*/
-
 .App { 
   min-width: 384px;
   max-width: 384px;
- /* min-height: 240px; */
 }
 
 .card__micro {
@@ -86,12 +80,7 @@ html, body {
   padding-top: 1.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}/* 2.5rem padding: var(--navds-spacing-5) var(--navds-spacing-3) var(--navds-spacing-10);*/
-
-/*
-.navds-form-field>:not(:first-child):not(:empty){
-margin-top: 0px !important; 
-}*/
+}
 
 .navds-search-field__input-wrapper>:last-child {
   background: #262626 !important;
@@ -100,7 +89,6 @@ margin-top: 0px !important;
 .navds-search-field__input-wrapper>:last-child:hover {
   background: #000 !important;
 }
-
 
 #myheader {
   padding: 0px !important;
@@ -133,18 +121,15 @@ margin-top: 0px !important;
   border: 1px solid transparent;
   text-decoration: none;
   color: var(--navds-link-panel-color-text);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   grid-gap: var(--navds-spacing-2);
   gap: var(--navds-spacing-2);
-
   border-color: var(--navds-panel-color-border);
-
   font-size: var(--navds-font-size-heading-medium);
-    letter-spacing: -0.002em;
-    line-height: var(--navds-font-line-height-heading-medium);
+  letter-spacing: -0.002em;
+  line-height: var(--navds-font-line-height-heading-medium);
 }
 
 .searchsuggestion {
@@ -161,27 +146,15 @@ margin-top: 0px !important;
   justify-content: space-between;
   grid-gap: var(--navds-spacing-2);
   gap: var(--navds-spacing-2);
-
   border-color: var(--navds-panel-color-border);
-
   font-size: var(--navds-font-size-heading-medium);
-    letter-spacing: -0.002em;
-    line-height: var(--navds-font-line-height-heading-medium);
+  letter-spacing: -0.002em;
+  line-height: var(--navds-font-line-height-heading-medium);
 }
 
 .searchsuggestion:hover {
   background-color: #ffd799 !important;
 }
-
-
-/*
-.myaccordiontop {
-  border-top: none !important;
-}
-
-.navds-accordion__content{
-  background-color: #f1f1f1;
-}*/
 
 .navds-accordion__header1 {
   padding: var(--navds-spacing-4) var(--navds-spacing-3);
@@ -208,15 +181,9 @@ margin-top: 0px !important;
   border-color: #a0a0a0;
 }
 
-
 .navds-accordion__item {
   padding-bottom: 0.15rem !important;
 }
-/*
-.mytabs {
-  background: #fff !important;
-}
-*/
 
 .navds-link {
   display: initial !important;
@@ -254,9 +221,9 @@ margin-top: 0px !important;
   line-height: var(--navds-font-line-height-large);
   margin: 0;
   position: absolute;
-    right: 0px;
-    top: 0px;
-    transform: translateX(120%);
+  right: 0px;
+  top: 0px;
+  transform: translateX(120%);
 }
 
 .iFscnB {
@@ -280,10 +247,6 @@ margin-top: 0px !important;
   color: white;
   font-size: small;
 }
-
-/*.kategorilenke {
-  font-weight: 400;
-}*/
 
 button span {
   pointer-events: none;

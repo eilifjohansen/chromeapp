@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import JSONDATA from "./../../tools.json";
-import CATEGORYDATA from "./../../category.json";
+import { Verktøy, Kategorier } from "../../data"
 import { LinkPanel, Link, Alert, Heading, SearchField, Button, Label } from "@navikt/ds-react";
 import { Search, Close } from "@navikt/ds-icons";
 
@@ -11,8 +10,8 @@ function MySearch() {
   const [searchActivate, setSearchActivate] = useState("");
   const [error, setError] = useState("");
   const [errorclass, setErrorclass] = useState("navds-search-field__input navds-text-field__input navds-body-short navds-body-medium");
-  const people = JSONDATA;
-  const category = CATEGORYDATA;
+  const people = Verktøy;
+  const category = Kategorier;
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();

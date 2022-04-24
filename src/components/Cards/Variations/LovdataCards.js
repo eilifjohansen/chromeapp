@@ -6,9 +6,8 @@ function LovdataCars(props) {
     const [siteRedirectUrl, setSiteRedirectUrl] = useState("");
     useEffect(() => {
         if (siteUrl.match('lovdata.no/dokument') && !siteUrl.match(/siteimprove.com/)) {
-            var smile = siteUrl.replace('dokument', 'pro');
-            setSiteRedirectUrl(smile);
-            console.log(smile)
+            var path = siteUrl.replace('dokument', 'pro');
+            setSiteRedirectUrl(path);
         }
     })
     return (

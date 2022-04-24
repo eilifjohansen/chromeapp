@@ -1,6 +1,6 @@
 import React from "react";
 import { Panel, Heading, Link } from "@navikt/ds-react";
-import { CardHeading, HotjarLinks, EditSiteLinks, SiteimproveLinks, AmplitudeLinks, Shortcuts } from "../Variations"
+import { HotjarLinks, EditSiteLinks, SiteimproveLinks, AmplitudeLinks } from "."
 
 function SiteAreaCards(props) {
     const siteUrl = props.siteUrl;
@@ -8,7 +8,6 @@ function SiteAreaCards(props) {
         <>
             {siteUrl.match('www.nav.no') &&
                 <Panel border className="rediger">
-                    {/* <CardHeading className="rediger" siteUrl={siteUrl} /> */}
                     <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
@@ -16,8 +15,6 @@ function SiteAreaCards(props) {
                         <HotjarLinks siteUrl={siteUrl} />
                         <li><Link target="_blank" href="https://analytics.eu.amplitude.com/nav/team-spaces">Amplitude webstatistikk</Link></li>
                     </ul>
-                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
@@ -31,23 +28,16 @@ function SiteAreaCards(props) {
                         <SiteimproveLinks siteUrl={siteUrl} />
                         <AmplitudeLinks siteUrl={siteUrl} />
                     </ul>
-                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
             {siteUrl.match('idebanken.org') &&
                 <Panel border className="rediger">
-                    {/* <Heading spacing size="small" level="2">
-                        <Link target="_blank" href="https://www.idebanken.org/kontakt-oss">Kommunikasjonsavdelingen</Link>
-                    </Heading> */}
                     <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
                         <SiteimproveLinks siteUrl={siteUrl} />
                     </ul>
-                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
@@ -61,23 +51,16 @@ function SiteAreaCards(props) {
                         <li><Link target="_blank" href="https://www.deterdinpensjon.no/wp-login.php">WordPress</Link> (CMS-systemet)</li>
                         <SiteimproveLinks siteUrl={siteUrl} />
                     </ul>
-                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
 
             {siteUrl.match('aksel.nav.no') &&
                 <Panel border className="rediger">
-                    {/* <Heading spacing size="small" level="2">
-                        <Link target="_blank" href="https://teamkatalog.nais.adeo.no/team/602c8ad5-00b5-47cd-87a3-d19175397e23">Team Aksel/Designsystemet</Link>
-                    </Heading> */}
                     <Heading className="cardsubtitle" spacing size="xsmall" level="2">Åpne siden i</Heading>
                     <ul>
                         <EditSiteLinks siteUrl={siteUrl} />
                         <li><Link target="_blank" href="https://my2.siteimprove.com/Dashboard/5765905975/30048105178/Dashboard/Index">Siteimprove kvalitetsjekk</Link></li>
                     </ul>
-                    {/* <Heading className="cardsubtitle" spacing size="xsmall" level="2">Snarveier</Heading>
-                    <Shortcuts siteUrl={siteUrl} /> */}
                 </Panel>
             }
         </>

@@ -14,12 +14,12 @@ function EditSiteCars(props) {
                     console.log("Status: ", response.status);
                     //console.log("Data: ", response.data);
                     if (response.data.match(/"_id":"(.*?)"/)) {
-                        var smile = response.data.match(/"_id":"(.*?)"/)[0];
-                        var smile2 = smile.replace('"_id":"', '');
-                        var smile3 = smile2.replace('"', '');
-                        var smile4 = "https://portal-admin.oera.no/admin/tool/com.enonic.app.contentstudio/main#/default/edit/" + smile3
-                        console.log(smile4)
-                        const siteRedirectUrl = (smile4);
+                        var step = response.data.match(/"_id":"(.*?)"/)[0];
+                        var step2 = step.replace('"_id":"', '');
+                        var step3 = step2.replace('"', '');
+                        var step4 = "https://portal-admin.oera.no/admin/tool/com.enonic.app.contentstudio/main#/default/edit/" + step3
+                        console.log(step4)
+                        const siteRedirectUrl = (step4);
                         setSiteRedirectUrl(siteRedirectUrl);
                     } else {
                         setSiteError("Sanity?");
@@ -35,11 +35,11 @@ function EditSiteCars(props) {
                     console.log("Status: ", response.status);
                     //console.log("Data: ", response.data);
                     if (response.data.match(/name="pageId" content="(.*?)"/)) {
-                        var smile = response.data.match(/name="pageId" content="(.*?)"/)[0];
-                        var smile2 = smile.replace('name="pageId" content="', '');
-                        var smile3 = smile2.replace('"', '');
-                        var smile4 = "https://idebanken-xp7prod.customer.enonic.io/admin/tool/com.enonic.app.contentstudio/main#/default/edit/" + smile3
-                        const siteRedirectUrl = (smile4);
+                        var step = response.data.match(/name="pageId" content="(.*?)"/)[0];
+                        var step2 = step.replace('name="pageId" content="', '');
+                        var step3 = step2.replace('"', '');
+                        var step4 = "https://idebanken-xp7prod.customer.enonic.io/admin/tool/com.enonic.app.contentstudio/main#/default/edit/" + step3
+                        const siteRedirectUrl = (step4);
                         setSiteRedirectUrl(siteRedirectUrl);
                     } else {
                         setSiteError("Sanity?");
@@ -57,22 +57,22 @@ function EditSiteCars(props) {
                     //console.log("Data: ", response.data);
                     if (response.data.match(/ds_component_page/)) {
                         if (response.data.match(/"_id":"(.*?)"/)) {
-                            var smile = response.data.match(/"_id":"(.*?)"/)[0];
-                            var smile2 = smile.replace('"_id":"', '');
-                            var smile3 = smile2.replace('"', '');
-                            var smile4 = "https://verktoykasse.sanity.studio/desk/designsystemPortal;innhold;komponentArtikler;" + smile3
-                            const siteRedirectUrl = (smile4);
+                            var step = response.data.match(/"_id":"(.*?)"/)[0];
+                            var step2 = step.replace('"_id":"', '');
+                            var step3 = step2.replace('"', '');
+                            var step4 = "https://verktoykasse.sanity.studio/desk/designsystemPortal;innhold;komponentArtikler;" + step3
+                            const siteRedirectUrl = (step4);
                             setSiteRedirectUrl(siteRedirectUrl);
                         } else {
                             setSiteError("Sanity?");
                         }
                     } else {
                         if (response.data.match(/"_id":"(.*?)"/)) {
-                            var smile = response.data.match(/"_id":"(.*?)"/)[0];
-                            var smile2 = smile.replace('"_id":"', '');
-                            var smile3 = smile2.replace('"', '');
-                            var smile4 = "https://verktoykasse.sanity.studio/desk/designsystemPortal;innhold;artikler;" + smile3
-                            const siteRedirectUrl = (smile4);
+                            var step = response.data.match(/"_id":"(.*?)"/)[0];
+                            var step2 = step.replace('"_id":"', '');
+                            var step3 = step2.replace('"', '');
+                            var step4 = "https://verktoykasse.sanity.studio/desk/designsystemPortal;innhold;artikler;" + step3
+                            const siteRedirectUrl = (step4);
                             setSiteRedirectUrl(siteRedirectUrl);
                         } else {
                             setSiteError("Sanity?");
@@ -92,7 +92,6 @@ function EditSiteCars(props) {
 
             {siteUrl.match('familie.nav.no') &&
                 <li><Link target="_blank" href="https://portal-admin.oera.no/admin/tool" rel="noreferrer">Enonic CMS</Link></li>
-
             }
 
             {siteUrl.match('www.nav.no/okonomi-og-gjeld') &&

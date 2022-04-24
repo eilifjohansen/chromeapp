@@ -1,5 +1,5 @@
 import React from "react";
-import { LovdataCards, ToolInfoCards, NavAreaCards, RelatedAreaCards } from "./Variations"
+import { LovdataCards, ToolInfoCards, NavAreaCards } from "./Variations"
 
 function MyCards(props) {
     const siteUrl = props.siteUrl;
@@ -8,7 +8,6 @@ function MyCards(props) {
             <NavAreaCards siteUrl={siteUrl} />
             <LovdataCards siteUrl={siteUrl} />
             <ToolInfoCards siteUrl={siteUrl} />
-            {/* <RelatedAreaCards siteUrl={siteUrl} /> */}
         </>
     );
 }

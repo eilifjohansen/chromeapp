@@ -13,8 +13,8 @@ function ToolInfoCars(props) {
                     <p className="rediger">Siteimprove gir oss en oversikt over problemer og forbedringsområder i forhold til: kvalitetssikring av innhold, universell utforming og søketrafikk.</p>
                     <ul>
                         <li><Link target="_blank" href="https://nav-it.slack.com/archives/C019SQF5AD8">Slackdialog</Link></li>
-                        <li><Link target="_blank" href="https://nav-it.slack.com/archives/C02UGFS2J4B">Kurs og opplæring</Link></li>
-                        <li><Link target="_blank" href="https://forms.office.com/r/rsWY1L0C1d?lang=nb-NO">Tilganger</Link></li>
+                        <li><Link target="_blank" href="https://jira.adeo.no/plugins/servlet/desk/portal/581/create/4322">Kurs og opplæring</Link></li>
+                        <li><Link target="_blank" href="https://jira.adeo.no/plugins/servlet/desk/portal/581/create/2641">Tilganger</Link></li>
                     </ul>
                 </Panel>
             }
@@ -27,9 +27,9 @@ function ToolInfoCars(props) {
                     <p className="rediger">Amplitude ble kjøpt inn for å måle hvordan folk bruker våre tjenester og kan brukes både i frontend og backend-applikasjoner.</p>
                     <ul>
                         <li><Link target="_blank" href="https://nav-it.slack.com/archives/CMK1SCBP1">Slackdialog</Link></li>
-                        <li><Link target="_blank" href="https://old-design-nav.vercel.app/god-praksis/amplitude">Veiledninger</Link></li>
-                        <li><Link target="_blank" href="https://nav-it.slack.com/archives/C02UGFS2J4B">Kurs og opplæring</Link></li>
-                        <li><Link target="_blank" href="https://forms.office.com/r/w5tzpk04T7?lang=nb-NO">Tilganger</Link></li>
+                        <li><Link target="_blank" href="https://aksel.nav.no/artikkel/m%C3%A5le-brukeratferd-med-amplitude?tema=brukerinnsikt">Veiledninger</Link></li>
+                        <li><Link target="_blank" href="https://jira.adeo.no/plugins/servlet/desk/portal/581/create/4322">Kurs og opplæring</Link></li>
+                        <li><Link target="_blank" href="https://jira.adeo.no/plugins/servlet/desk/portal/581/create/2641">Tilganger</Link></li>
                     </ul>
                 </Panel>
             }
@@ -42,9 +42,9 @@ function ToolInfoCars(props) {
                     <p className="rediger">Hotjar brukes til å gjennomføre spørreundersøkelser på nettsidene. Det kan også brukes til å ta opptak av hvordan folk navigerer på sidene, og se forskjeller i bruksmønster på mobil og p</p>
                     <ul>
                         <li><Link target="_blank" href="https://nav-it.slack.com/archives/CB75V4761">Slackdialog</Link></li>
-                        <li><Link target="_blank" href="https://old-design-nav.vercel.app/god-praksis/hotjar">Veiledninger</Link></li>
+                        <li><Link target="_blank" href="https://aksel.nav.no/artikkel/oppsett-og-bruk-av-hotjar?tema=brukerinnsikt">Veiledninger</Link></li>
                         <li><Link target="_blank" href="https://nav-it.slack.com/archives/C02UGFS2J4B">Kurs og opplæring</Link></li>
-                        <li><Link target="_blank" href="https://forms.office.com/r/851T0ErnNy?lang=nb-NO">Tilganger</Link></li>
+                        <li><Link target="_blank" href="https://jira.adeo.no/plugins/servlet/desk/portal/581/create/2641">Tilganger</Link></li>
                     </ul>
                 </Panel>
             }
@@ -57,9 +57,9 @@ function ToolInfoCars(props) {
                     <p className="rediger">Task Analytics er et verktøy laget for å utføre målinger med toppoppgavemetoden.</p>
                     <ul>
                         <li><Link target="_blank" href="https://nav-it.slack.com/archives/CB75V4761">Slackdialog</Link></li>
-                        <li><Link target="_blank" href="https://old-design-nav.vercel.app/god-praksis/task-analytics">Veiledninger</Link></li>
+                        <li><Link target="_blank" href="https://aksel.nav.no/artikkel/toppoppgaver-og-task-analytics?tema=brukerinnsikt">Veiledninger</Link></li>
                         <li><Link target="_blank" href="https://nav-it.slack.com/archives/C02UGFS2J4B">Kurs og opplæring</Link></li>
-                        <li><Link target="_blank" href="https://nav-it.slack.com/archives/C02UGFS2J4B">Tilganger</Link></li>
+                        <li><Link target="_blank" href="https://jira.adeo.no/plugins/servlet/desk/portal/581/create/2641">Tilganger</Link></li>
                     </ul>
                 </Panel>
             }
@@ -73,7 +73,7 @@ function ToolInfoCars(props) {
                     <ul>
                         <li><Link target="_blank" href="https://nav-it.slack.com/archives/C013GARULKE">Slackdialog</Link></li>
                         <li><Link target="_blank" href="https://www.youtube.com/watch?v=mhslj4-OSRM">Introduksjonsvideo</Link></li>
-                        <li><Link target="_blank" href="  https://myapplications.microsoft.com/">Tilganger</Link></li>
+                        <li><Link target="_blank" href="https://myapplications.microsoft.com/">Tilganger</Link></li>
                     </ul>
                 </Panel>
             }
