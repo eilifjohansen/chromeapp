@@ -1,735 +1,742 @@
 {
     "tools": [
         {
-            "id": "5920189",
-            "name": "Amplitude",
+            "id": "6537034",
+            "name": "Amplitude EU",
             "description": "@",
             "link": "https://analytics.eu.amplitude.com/nav/workspace",
             "category": "#brukerinnsikt"
         },
         {
-            "id": "4713269",
+            "id": "7112359",
             "name": "Navet",
             "description": "Sharepoint",
             "link": "https://navno.sharepoint.com/",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "5056765",
+            "id": "7915627",
             "name": "Teamkatalogen",
             "description": "@",
             "link": "https://teamkatalog.nais.adeo.no/",
             "category": "#katalog"
         },
         {
-            "id": "5951843",
+            "id": "7623941",
             "name": "Begrepskatalog",
             "description": "@",
             "link": "https://data.nav.no/?Tema=%5B%22Begreper%22%5D&sortKey=%22issued%22&sortOrder=%22desc%22",
             "category": "#katalog"
         },
         {
-            "id": "7960696",
+            "id": "5917740",
             "name": "Aksel",
             "description": "Produktutvikling i praksis",
             "link": "https://aksel.nav.no",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "6270117",
+            "id": "7282462",
             "name": "Behandlingskatalog",
             "description": "@",
             "link": "https://behandlingskatalog.nais.adeo.no",
             "category": "#katalog"
         },
         {
-            "id": "4851114",
+            "id": "7559126",
             "name": "Datakatalog",
             "description": "@",
             "link": "https://data.intern.nav.no/",
             "category": "#katalog"
         },
         {
-            "id": "9796046",
+            "id": "2037728",
             "name": "Designsystemet",
             "description": "Aksel",
             "link": "https://aksel.nav.no/designsystem",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "2864889",
+            "id": "1142199",
             "name": "Etterlevelse",
             "description": "@",
             "link": "https://etterlevelse.intern.nav.no/",
             "category": "#katalog"
         },
         {
-            "id": "8095339",
+            "id": "3665902",
             "name": "Figma",
             "description": "@",
             "link": "https://www.figma.com/",
             "category": "#design"
         },
         {
-            "id": "2787358",
+            "id": "8635140",
             "name": "Grafana",
             "description": "@",
             "link": "https://grafana.nais.io/",
             "category": "#analyse"
         },
         {
-            "id": "5570561",
+            "id": "1675044",
             "name": "Hotjar",
             "description": "@",
             "link": "https://insights.hotjar.com/sites/118350/surveys/list",
             "category": "#brukerinnsikt"
         },
         {
-            "id": "4207849",
+            "id": "6333935",
             "name": "Lovdata Pro",
             "description": "@",
             "link": "https://lovdata.no/pro/",
             "category": "#lov"
         },
         {
-            "id": "8417790",
+            "id": "7938665",
             "name": "Mural",
             "description": "@",
             "link": "https://app.mural.co/signin",
             "category": "#team"
         },
         {
-            "id": "9057475",
+            "id": "9212118",
             "name": "NAV rettskilder",
             "description": "@",
             "link": "https://lovdata.no/nav/",
             "category": "#lov"
         },
         {
-            "id": "7226140",
+            "id": "5288268",
             "name": "My Apps / Mine apper",
             "description": "@",
             "link": "https://myapps.microsoft.com/",
             "category": "#lisenser"
         },
         {
-            "id": "4277731",
+            "id": "2676653",
             "name": "Porten",
             "description": "@",
             "link": "https://jira.adeo.no/plugins/servlet/desk",
             "category": "#lisenser"
         },
         {
-            "id": "5268727",
+            "id": "7346541",
+            "name": "Brukerinnsikt",
+            "description": "Aksel",
+            "link": "https://aksel.nav.no/tema/brukerinnsikt",
+            "category": "#hjelpeartikler"
+        },
+        {
+            "id": "9162431",
             "name": "Universell utforming",
             "description": "Aksel",
             "link": "https://aksel.nav.no/tema/universell-utforming",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "2872448",
+            "id": "6089019",
             "name": "Identitet",
             "description": "NAVs designmanual",
             "link": "https://identitet.nav.no/",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "1878940",
+            "id": "8230062",
             "name": "Security Playbook",
             "description": "Sikker utvikling i NAV IT",
             "link": "https://sikkerhet.nav.no/",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "8187875",
+            "id": "4810794",
             "name": "Confluence",
             "description": "Wiki",
             "link": "https://confluence.adeo.no/#popular",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "2605475",
+            "id": "6540057",
             "name": "Siteimprove ",
             "description": "@",
             "link": "https://my2.siteimprove.com/Auth/Saml2/6274809",
             "category": "#brukerinnsikt"
         },
         {
-            "id": "5776598",
+            "id": "3537300",
             "name": "Task Analytics",
             "description": "@",
             "link": "https://admin.taskanalytics.com/org/12559963/dashboard",
             "category": "#brukerinnsikt"
         },
         {
-            "id": "7641311",
+            "id": "9006803",
             "name": "Teknologiradar",
             "description": "@",
             "link": "https://teknologiradaren.labs.nais.io/",
             "category": "#katalog"
         },
         {
-            "id": "5878777",
+            "id": "6638682",
             "name": "Enonic XP",
             "description": "nav.no",
             "link": "https://portal-admin.oera.no/admin/tool",
             "category": "#enonic"
         },
         {
-            "id": "7327507",
+            "id": "9244550",
             "name": "Læringsportalen",
             "description": "@",
             "link": "https://nav.sabacloud.com/Saba/Web_spf/EU2PRD0088/app/dashboard",
             "category": "#org"
         },
         {
-            "id": "2221544",
+            "id": "8376006",
             "name": "MinWinTid",
             "description": "@",
             "link": "https://minwintidmobil.adeo.no/MinWintid/#",
             "category": "#org"
         },
         {
-            "id": "7654759",
+            "id": "4499204",
             "name": "Agresso / Unit4",
             "description": "@",
             "link": "https://agresso.adeo.no/agresso/#",
             "category": "#org"
         },
         {
-            "id": "6048693",
+            "id": "2735017",
             "name": "NAV Applikasjoner",
             "description": "Citrix",
             "link": "https://mobapps.nav.no/Citrix/IKSS_MobappsWeb/",
             "category": "#org"
         },
         {
-            "id": "3336853",
+            "id": "3867844",
             "name": "Testportalen",
             "description": "@",
             "link": "https://navno.sharepoint.com/sites/TjenestekatalogTestseksjonen/SitePages/Tjenestekatalogen-fra-Seksjon-for-Test.aspx",
             "category": "#org"
         },
         {
-            "id": "5767483",
+            "id": "6141501",
             "name": "Github/navikt",
             "description": "@",
             "link": "https://account.activedirectory.windowsazure.com/applications/signin/932a280c-5431-4a98-8b5a-45dffe0741d7?tenantId=62366534-1ec3-4962-8869-9b5535279d0b",
             "category": "#kode"
         },
         {
-            "id": "9084064",
+            "id": "6153811",
             "name": "Github/nais",
             "description": "@",
             "link": "https://account.activedirectory.windowsazure.com/applications/signin/291bd1ff-49be-42e6-ad63-5f717374fc01?tenantId=62366534-1ec3-4962-8869-9b5535279d0b",
             "category": "#kode"
         },
         {
-            "id": "7782319",
+            "id": "9658740",
             "name": "NAIS dokumentasjon",
             "description": "Applikasjonsplattformen",
             "link": "https://doc.nais.io/",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "8578771",
+            "id": "7638073",
             "name": "Komponenter",
             "description": "Designsystemet",
             "link": "https://aksel.nav.no/designsystem/side/oversikt-komponenter",
             "category": "#kode"
         },
         {
-            "id": "8725161",
+            "id": "8627249",
             "name": "UXtweak ",
             "description": "@",
             "link": "https://app.uxtweak.com/dashboard",
             "category": "#brukerinnsikt"
         },
         {
-            "id": "2582368",
+            "id": "8347293",
             "name": "Trello",
             "description": "@",
             "link": "https://trello.com/login",
             "category": "#team"
         },
         {
-            "id": "5752187",
+            "id": "2994682",
             "name": "Zoom",
             "description": "@",
             "link": "https://nav-it.zoom.us/saml/login",
             "category": "#team"
         },
         {
-            "id": "6407687",
+            "id": "1867953",
             "name": "Slack",
             "description": "@",
             "link": "https://nav-it.slack.com/archives/C5KU18W2W",
             "category": "#team"
         },
         {
-            "id": "5894332",
+            "id": "4497879",
             "name": "Jira",
             "description": "@",
             "link": "https://jira.adeo.no/secure/Dashboard.jspa",
             "category": "#team"
         },
         {
-            "id": "4284304",
+            "id": "6501828",
             "name": "Microsoft Teams",
             "description": "@",
             "link": "https://teams.microsoft.com/",
             "category": "#team"
         },
         {
-            "id": "5732944",
+            "id": "5513728",
             "name": "Microsoft Forms",
             "description": "@",
             "link": "https://www.office.com/launch/forms?auth=2",
             "category": "#org"
         },
         {
-            "id": "7699152",
+            "id": "7389453",
             "name": "Yammer",
             "description": "@",
             "link": "https://web.yammer.com/main/feed",
             "category": "#org"
         },
         {
-            "id": "5443507",
+            "id": "5117053",
             "name": "Metabase",
             "description": "@",
             "link": "https://metabase.intern.nav.no/",
             "category": "#analyse"
         },
         {
-            "id": "2920272",
+            "id": "3965576",
             "name": "Microsoft OneDrive",
             "description": "@",
             "link": "https://navno-my.sharepoint.com/",
             "category": "#personlig"
         },
         {
-            "id": "5163672",
+            "id": "3312558",
             "name": "Oria",
             "description": "Arbeids- og velferdsbiblioteket",
             "link": "https://bibsys-almaprimo.hosted.exlibrisgroup.com/primo-explore/search?vid=NAV",
             "category": "#læring"
         },
         {
-            "id": "2652247",
+            "id": "3193291",
             "name": "Google Analytics",
             "description": "@",
             "link": "https://analytics.google.com/analytics/web/",
             "category": "#brukerinnsikt"
         },
         {
-            "id": "8872997",
+            "id": "5528958",
             "name": "Google Tag Manager",
             "description": "@",
             "link": "https://tagmanager.google.com/#/home",
             "category": "#web"
         },
         {
-            "id": "6423994",
+            "id": "7081847",
             "name": "O'Reilly (SafariBooks)",
             "description": "@",
             "link": "https://learning.oreilly.com/home/",
             "category": "#læring"
         },
         {
-            "id": "7103259",
+            "id": "2449988",
             "name": "Google Search Console",
             "description": "@",
             "link": "https://search.google.com/search-console",
             "category": "#analyse"
         },
         {
-            "id": "7968042",
+            "id": "2252982",
             "name": "Bing Webmaster Tools",
             "description": "@",
             "link": "https://www.bing.com/webmasters",
             "category": "#analyse"
         },
         {
-            "id": "9727300",
+            "id": "1200368",
             "name": "Google Cloud Platform",
             "description": "@",
             "link": "https://console.cloud.google.com/",
             "category": "#ikt"
         },
         {
-            "id": "1299249",
+            "id": "2547583",
             "name": "Appbiblioteket",
             "description": "@",
             "link": "https://appbiblioteket.no/",
             "category": "#katalog"
         },
         {
-            "id": "7575398",
+            "id": "1403069",
             "name": "API Portal",
             "description": "@",
             "link": "https://api-portal.nav.no/",
             "category": "#ikt"
         },
         {
-            "id": "7457481",
+            "id": "1351171",
             "name": "Ikoner",
             "description": "Designsystemet",
             "link": "https://aksel.nav.no/designsystem/side/ikoner",
             "category": "#Designsystemet"
         },
         {
-            "id": "9760635",
+            "id": "2448566",
             "name": "Farger",
             "description": "Identitet",
             "link": "https://identitet.nav.no/d/n49NiiediAKF/identitet#/identitet/farger",
             "category": "#identitet"
         },
         {
-            "id": "5808598",
+            "id": "7768449",
             "name": "Innholdsstrategi",
             "description": "Designsystemet",
             "link": "https://aksel.nav.no/designsystem/side/innholdsstrategi-person",
             "category": "#innhold"
         },
         {
-            "id": "8012426",
+            "id": "7213041",
             "name": "Logo",
             "description": "Identitet",
             "link": "https://identitet.nav.no/d/n49NiiediAKF/identitet#/identitet/logo",
             "category": "#identitet"
         },
         {
-            "id": "1918828",
+            "id": "8424345",
             "name": "Fonter",
             "description": "Identitet",
             "link": "https://identitet.nav.no/d/n49NiiediAKF/identitet#/typografi/fonter",
             "category": "#identitet"
         },
         {
-            "id": "4711527",
+            "id": "6246267",
             "name": "Språkguide",
             "description": "Designsystemet",
             "link": "https://aksel.nav.no/designsystem/side/spr%C3%A5k",
             "category": "#innhold"
         },
         {
-            "id": "2373045",
+            "id": "8680040",
             "name": "Brutte lenker",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/QualityAssurance/1002489/Links/Index",
             "category": "#siteimprove"
         },
         {
-            "id": "5586612",
+            "id": "3496884",
             "name": "Skrivefeil",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/QualityAssurance/1002489/Spelling/IndexV2",
             "category": "#siteimprove"
         },
         {
-            "id": "9343769",
+            "id": "7340074",
             "name": "Lesbarhet",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/QualityAssurance/1002489/Readability/Scores",
             "category": "#siteimprove"
         },
         {
-            "id": "9976932",
+            "id": "1874530",
             "name": "Universell utforming",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/Accessibility/1002489/NextGen/Overview?pageSegments=&conformance=0,1,2,3,4&siteGoal=0,1,2,3,4",
             "category": "#siteimprove"
         },
         {
-            "id": "8489834",
+            "id": "8922940",
             "name": "SEO",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/SEOv2/1002489/Overview/Index",
             "category": "#siteimprove"
         },
         {
-            "id": "3806540",
+            "id": "4943571",
             "name": "Gammelnavsk",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/Policy/21766831756/PolicyDetails/Content/1?policyId=28047124742&tagIds=&ignoredPolicyViolationsOnly=false&last30DaysOnly=false",
             "category": "#siteimprove"
         },
         {
-            "id": "6082456",
+            "id": "6640652",
             "name": "Enonic XP",
             "description": "idebanken.org",
             "link": "https://idebanken-xp7prod.customer.enonic.io/admin/tool",
             "category": "#enonic"
         },
         {
-            "id": "2237534",
+            "id": "3128307",
             "name": "Sanity",
             "description": "Aksel",
             "link": "https://verktoykasse.sanity.studio/desk",
             "category": "#sanity"
         },
         {
-            "id": "2320738",
+            "id": "4855402",
             "name": "Policy / Regler",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/Policy/21766831756/ContentPolicies/Index/1/Matches/Desc?pinnedOnly=false&pageSize=100&policies-tab=0",
             "category": "#siteimprove"
         },
         {
-            "id": "7909107",
+            "id": "9932201",
             "name": "Gammelnavsk ordliste",
             "description": "Sharepoint",
             "link": "https://navno.sharepoint.com/:b:/s/xn--sprketinav-35a/EQRQ5Kb9Ih5BrJ6dJj_PDl0Bu1veA8yGxZ4hr2-9NvV86A?e=PaNO1J",
             "category": "#sharepoint"
         },
         {
-            "id": "3965239",
+            "id": "2249943",
             "name": "Hotjar varmekart",
             "description": "@",
             "link": "https://insights.hotjar.com/sites/118350/heatmap/view",
             "category": "#analyse"
         },
         {
-            "id": "5263185",
+            "id": "4045573",
             "name": "Hotjar skjermopptak",
             "description": "@",
             "link": "https://insights.hotjar.com/sites/118350/playbacks/list",
             "category": "#analyse"
         },
         {
-            "id": "4073368",
+            "id": "6590122",
             "name": "Innholdsoversikt på nav.no",
             "description": "Metabase",
             "link": "https://metabase.intern.nav.no/dashboard/11-innholdsoversikt-pa-nav-no",
             "category": "#metabase"
         },
         {
-            "id": "8464553",
+            "id": "7959787",
             "name": "SurveyXact",
             "description": "@",
             "link": "https://www.survey-xact.no/servlet/com.pls.morpheus.web.pages.CoreUserOrganizationList ",
             "category": "#brukerinnsikt"
         },
         {
-            "id": "7695153",
+            "id": "6877696",
             "name": "NAV Data",
             "description": "@",
             "link": "https://data.intern.nav.no/",
             "category": "#data"
         },
         {
-            "id": "9671245",
+            "id": "2479341",
             "name": "NAV Data",
             "description": "Dataprodukter",
             "link": "https://data.intern.nav.no/search?types=dataproduct",
             "category": "#data"
         },
         {
-            "id": "6111779",
+            "id": "8725421",
             "name": "NAV Data",
             "description": "Datapakker",
             "link": "https://datapakker.intern.nav.no",
             "category": "#data"
         },
         {
-            "id": "8823593",
+            "id": "6282195",
             "name": "NAV Data",
             "description": "Datafortellinger",
             "link": "https://data.intern.nav.no/search?types=story",
             "category": "#data"
         },
         {
-            "id": "4518200",
+            "id": "1589063",
             "name": "Flowscape Kart",
             "description": "Fyrstikkalléen 1",
             "link": "https://nav.flowscape.se/webapp/",
             "category": "#eiendom"
         },
         {
-            "id": "2842264",
+            "id": "5711025",
             "name": "Mentimeter",
             "description": "@",
             "link": "https://www.mentimeter.com/app",
             "category": "#team"
         },
         {
-            "id": "1142915",
+            "id": "3184972",
             "name": "Språket - utvikling og trender",
             "description": "Siteimprove",
             "link": "https://my2.siteimprove.com/Dashboard/29328561138/21766831756/Dashboard/Index",
             "category": "#siteimprove"
         },
         {
-            "id": "6839392",
+            "id": "8353309",
             "name": "NAV.no",
             "description": "Visjon og verdier",
             "link": "https://www.nav.no/no/nav-og-samfunn/om-nav/fakta-om-nav/kva-er-nav/visjon-og-verdier",
             "category": "#org"
         },
         {
-            "id": "8019724",
+            "id": "3482430",
             "name": "Microsoft Azure",
             "description": "@",
             "link": "https://portal.azure.com/#home",
             "category": "#data"
         },
         {
-            "id": "4682509",
+            "id": "5799398",
             "name": "NADA dokumentasjon",
             "description": "Hvordan finne og dele data i NAV",
             "link": "https://docs.knada.io/",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "2176369",
+            "id": "5349990",
             "name": "Elastic Logs",
             "description": "@",
             "link": "https://logs.adeo.no/app/discover",
             "category": "#data"
         },
         {
-            "id": "3481934",
+            "id": "5843014",
             "name": "Docker",
             "description": "@",
             "link": "http://hub.docker.com/login",
             "category": "#utvikling"
         },
         {
-            "id": "9547972",
+            "id": "8086487",
             "name": "NAIS Deploy",
             "description": "@",
             "link": "https://deploy.nais.io/",
             "category": "#data"
         },
         {
-            "id": "9936442",
+            "id": "6935668",
             "name": "Storybook",
             "description": "Aksel",
             "link": "https://navikt.github.io/Designsystemet/",
             "category": "#utvikling"
         },
         {
-            "id": "1003059",
+            "id": "9402570",
             "name": "Sentry (GCP)",
             "description": "@",
             "link": "https://account.activedirectory.windowsazure.com/applications/signin/2c20cd62-8556-4ed7-9ac2-1a132f2238f9?tenantId=62366534-1ec3-4962-8869-9b5535279d0b",
             "category": "#utvikling"
         },
         {
-            "id": "6731165",
+            "id": "8663847",
             "name": "Dolly",
             "description": "@",
             "link": "https://dolly.ekstern.dev.nav.no/login",
             "category": "#kode"
         },
         {
-            "id": "9899635",
+            "id": "9932759",
             "name": "Microsoft Power Automate",
             "description": "@",
             "link": "https://flow.microsoft.com/",
             "category": "#automatisering"
         },
         {
-            "id": "3541262",
+            "id": "8609856",
             "name": "Microsoft Power Apps",
             "description": "@",
             "link": "https://make.powerapps.com/",
             "category": "#utvikling"
         },
         {
-            "id": "8645303",
+            "id": "2697067",
             "name": "Microsoft Stream",
             "description": "@",
             "link": "https://web.microsoftstream.com/",
             "category": "#video"
         },
         {
-            "id": "9759394",
+            "id": "1605645",
             "name": "Microsoft Outlook",
             "description": "@",
             "link": "https://outlook.office.com/mail/",
             "category": "#kontor"
         },
         {
-            "id": "2013329",
+            "id": "4356564",
             "name": "Microsoft Delve",
             "description": "@",
             "link": "https://eur.delve.office.com/",
             "category": "#kontor"
         },
         {
-            "id": "5034840",
+            "id": "9272684",
             "name": "Erfaringsforum",
             "description": "@",
             "link": "https://navet.adeo.no/forum/",
             "category": "#team"
         },
         {
-            "id": "7246829",
+            "id": "5917682",
             "name": "Microsoft Viva Insights",
             "description": "@",
             "link": "https://insights.viva.office.com/",
             "category": "#kontor"
         },
         {
-            "id": "5568994",
+            "id": "1249034",
             "name": "Microsoft OneNote",
             "description": "@",
             "link": "https://www.office.com/launch/onenote",
             "category": "#kontor"
         },
         {
-            "id": "6877286",
+            "id": "2558290",
             "name": "Microsoft Word",
             "description": "@",
             "link": "https://www.office.com/launch/word",
             "category": "#kontor"
         },
         {
-            "id": "2210511",
+            "id": "1066711",
             "name": "Microsoft Excel",
             "description": "@",
             "link": "https://www.office.com/launch/excel",
             "category": "#kontor"
         },
         {
-            "id": "8085261",
+            "id": "5969073",
             "name": "Microsoft PowerPoint",
             "description": "@",
             "link": "https://www.office.com/launch/powerpoint",
             "category": "#kontor"
         },
         {
-            "id": "7024587",
+            "id": "3550905",
             "name": "Microsoft Project",
             "description": "@",
             "link": "https://project.microsoft.com/",
             "category": "#kontor"
         },
         {
-            "id": "9166425",
+            "id": "6959769",
             "name": "Microsoft Sway",
             "description": "@",
             "link": "https://www.office.com/launch/sway",
             "category": "#kontor"
         },
         {
-            "id": "5436243",
+            "id": "5006801",
             "name": "Microsoft To Do",
             "description": "@",
             "link": "https://to-do.office.com/",
             "category": "#kontor"
         },
         {
-            "id": "6987532",
+            "id": "2018311",
             "name": "NAKA dokumentasjon",
             "description": "NAVs kataloger",
             "link": "https://navikt.github.io/naka/",
             "category": "#hjelpeartikler"
         },
         {
-            "id": "2438568",
+            "id": "2416465",
             "name": "Vurdering av verktøy",
             "description": "@",
             "link": "https://navno.sharepoint.com/sites/intranett-it/SitePages/Vurdering-av-programvare-og-tjenester.aspx",

@@ -1,5 +1,5 @@
 // Cards
-export { default as NavAreaCards } from "./NavAreaCards";
+export { default as SiteCards } from "./SiteCards";
 export { default as ToolInfoCards } from "./ToolInfoCards";
 export { default as LovdataCards } from "./LovdataCards";
 

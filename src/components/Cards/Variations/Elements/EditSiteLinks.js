@@ -11,18 +11,17 @@ function EditSiteCars(props) {
         if (siteUrl.match(/www.nav.no/) && !siteUrl.match(/siteimprove.com/)) {
             axios.get(siteUrl)
                 .then(response => {
-                    console.log("Status: ", response.status);
+                    // console.log("Status: ", response.status);
                     //console.log("Data: ", response.data);
                     if (response.data.match(/"_id":"(.*?)"/)) {
                         var step = response.data.match(/"_id":"(.*?)"/)[0];
                         var step2 = step.replace('"_id":"', '');
                         var step3 = step2.replace('"', '');
                         var step4 = "https://portal-admin.oera.no/admin/tool/com.enonic.app.contentstudio/main#/default/edit/" + step3
-                        console.log(step4)
                         const siteRedirectUrl = (step4);
                         setSiteRedirectUrl(siteRedirectUrl);
                     } else {
-                        setSiteError("Sanity?");
+                        setSiteError("Error, could not get URL");
                     }
                 }).catch(error => {
                     console.error('Something went wrong!', error);
@@ -32,8 +31,6 @@ function EditSiteCars(props) {
         if (siteUrl.match(/www.idebanken.org/) && !siteUrl.match(/siteimprove.com/)) {
             axios.get(siteUrl)
                 .then(response => {
-                    console.log("Status: ", response.status);
-                    //console.log("Data: ", response.data);
                     if (response.data.match(/name="pageId" content="(.*?)"/)) {
                         var step = response.data.match(/name="pageId" content="(.*?)"/)[0];
                         var step2 = step.replace('name="pageId" content="', '');
@@ -42,9 +39,63 @@ function EditSiteCars(props) {
                         const siteRedirectUrl = (step4);
                         setSiteRedirectUrl(siteRedirectUrl);
                     } else {
-                        setSiteError("Sanity?");
+                        setSiteError("Error, could not get URL");
                     }
 
+                }).catch(error => {
+                    console.error('Something went wrong!', error);
+                });
+        }
+
+        if (siteUrl.match('aksel.nav.no/artikkel') && !siteUrl.match('aksel.nav.no/designsystem')) {
+            axios.get(siteUrl)
+                .then(response => {
+                    if (response.data.match(/"_id":"(.*?)"/)) {
+                        var step = response.data.match(/"_id":"(.*?)"/)[0];
+                        var step2 = step.replace('"_id":"', '');
+                        var step3 = step2.replace('"', '');
+                        var step4 = "https://verktoykasse.sanity.studio/desk/innholdAksel;artikler;" + step3
+                        const siteRedirectUrl = (step4);
+                        setSiteRedirectUrl(siteRedirectUrl);
+                    } else {
+                        setSiteError("Error, could not get URL");
+                    }
+                }).catch(error => {
+                    console.error('Something went wrong!', error);
+                });
+        }
+
+        if (siteUrl.match('aksel.nav.no/tema') && !siteUrl.match('aksel.nav.no/designsystem')) {
+            axios.get(siteUrl)
+                .then(response => {
+                    if (response.data.match(/"_id":"(.*?)"/)) {
+                        var step = response.data.match(/"_id":"(.*?)"/)[0];
+                        var step2 = step.replace('"_id":"', '');
+                        var step3 = step2.replace('"', '');
+                        var step4 = "https://verktoykasse.sanity.studio/desk/innholdAksel;tema;" + step3
+                        const siteRedirectUrl = (step4);
+                        setSiteRedirectUrl(siteRedirectUrl);
+                    } else {
+                        setSiteError("Error, could not get URL");
+                    }
+                }).catch(error => {
+                    console.error('Something went wrong!', error);
+                });
+        }
+
+        if (siteUrl.match('aksel.nav.no/blogg') && !siteUrl.match('aksel.nav.no/designsystem')) {
+            axios.get(siteUrl)
+                .then(response => {
+                    if (response.data.match(/"_id":"(.*?)"/)) {
+                        var step = response.data.match(/"_id":"(.*?)"/)[0];
+                        var step2 = step.replace('"_id":"', '');
+                        var step3 = step2.replace('"', '');
+                        var step4 = "https://verktoykasse.sanity.studio/desk/innholdAksel;blogg;" + step3
+                        const siteRedirectUrl = (step4);
+                        setSiteRedirectUrl(siteRedirectUrl);
+                    } else {
+                        setSiteError("Error, could not get URL");
+                    }
                 }).catch(error => {
                     console.error('Something went wrong!', error);
                 });
@@ -53,19 +104,8 @@ function EditSiteCars(props) {
         if (siteUrl.match('aksel.nav.no/designsystem') && !siteUrl.match(/siteimprove.com/)) {
             axios.get(siteUrl)
                 .then(response => {
-                    console.log("Status: ", response.status);
-                    //console.log("Data: ", response.data);
-                    if (response.data.match(/ds_component_page/)) {
-                        if (response.data.match(/"_id":"(.*?)"/)) {
-                            var step = response.data.match(/"_id":"(.*?)"/)[0];
-                            var step2 = step.replace('"_id":"', '');
-                            var step3 = step2.replace('"', '');
-                            var step4 = "https://verktoykasse.sanity.studio/desk/designsystemPortal;innhold;komponentArtikler;" + step3
-                            const siteRedirectUrl = (step4);
-                            setSiteRedirectUrl(siteRedirectUrl);
-                        } else {
-                            setSiteError("Sanity?");
-                        }
+                    if (!response.data.match(/ds_artikkel/)) {
+                        setSiteRedirectUrl("https://verktoykasse.sanity.studio/desk/designsystemPortal");
                     } else {
                         if (response.data.match(/"_id":"(.*?)"/)) {
                             var step = response.data.match(/"_id":"(.*?)"/)[0];
@@ -75,7 +115,7 @@ function EditSiteCars(props) {
                             const siteRedirectUrl = (step4);
                             setSiteRedirectUrl(siteRedirectUrl);
                         } else {
-                            setSiteError("Sanity?");
+                            setSiteError("Error, could not get URL");
                         }
                     }
 
@@ -111,7 +151,10 @@ function EditSiteCars(props) {
             }
 
             {siteUrl.match(/aksel.nav.no/) && !siteUrl.match('aksel.nav.no/designsystem') &&
-                <li><Link target="_blank" href="https://verktoykasse.sanity.studio/desk" rel="noreferrer">Sanity CMS</Link></li>
+                <>
+                    {siteRedirectUrl ? (<li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Sanity CMS</Link></li>) : (<li><Link target="_blank" href="https://verktoykasse.sanity.studio/desk" rel="noreferrer">Sanity CMS</Link></li>)
+                    }
+                </>
             }
 
             {siteRedirectUrl && siteUrl.match(/idebanken.org/) &&

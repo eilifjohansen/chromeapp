@@ -1,7 +1,7 @@
 import React from "react";
 import { Panel, Heading, Link } from "@navikt/ds-react";
 
-function ToolInfoCars(props) {
+function ToolInfoCards(props) {
     const siteUrl = props.siteUrl;
     return (
         <>
@@ -94,4 +94,4 @@ function ToolInfoCars(props) {
     );
 }
 
-export default ToolInfoCars;
+export default ToolInfoCards;

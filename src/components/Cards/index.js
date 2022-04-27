@@ -1,11 +1,11 @@
 import React from "react";
-import { LovdataCards, ToolInfoCards, NavAreaCards } from "./Variations"
+import { LovdataCards, ToolInfoCards, SiteCards } from "./Variations"
 
 function MyCards(props) {
     const siteUrl = props.siteUrl;
     return (
         <>
-            <NavAreaCards siteUrl={siteUrl} />
+            <SiteCards siteUrl={siteUrl} />
             <LovdataCards siteUrl={siteUrl} />
             <ToolInfoCards siteUrl={siteUrl} />
         </>

@@ -9,9 +9,9 @@
   "permissions": [
     "activeTab"
   ],
-  "manifest_version": 2,
+  "manifest_version": 3,
   "version": "0.0.1",
-  "browser_action": {
+  "action": {
     "default_popup": "index.html",
     "default_title": "NAV Verktøy",
     "default_icon": "suitcase.png"  }

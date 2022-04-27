@@ -16,7 +16,7 @@ function MySearch() {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     setSearchActivate("Active")
-    console.log(e.target[0].value);
+    // console.log(e.target[0].value);
     if (!e.target[0].value) {
       setError("Du må fylle inn søkefeltet")
       setErrorclass("navds-text-field--error navds-search-field__input navds-text-field__input navds-body-short navds-body-medium")
@@ -73,8 +73,6 @@ function MySearch() {
         <>
           <Button type="submit" size="xsmall" className="rediger card__micro" value="#analyse" onClick={() => setSearch("True") & setValue("") & setError("")}>Kategorier</Button>
           <Button type="submit" size="xsmall" className="rediger card__micro" value="#hjelpeartikler" onClick={setCategory}>Hjelpeartikler</Button>
-           {/* <Button type="submit" size="xsmall" className="rediger card__micro" value="#brukerinnsikt" onClick={setCategory}>Brukerinnsikt</Button> 
-           <Button type="submit" size="xsmall" className="rediger card__micro" value="#katalog" onClick={setCategory}>NAVs kataloger</Button>  */}
         </>
       }
 
@@ -123,8 +121,6 @@ function MySearch() {
           )}
         </div>
       }
-
-      {/* {value && <hr className="rediger" />} */}
     </>
   );
 }

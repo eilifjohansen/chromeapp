@@ -2,7 +2,7 @@ import React from "react";
 import { Panel, Heading, Link } from "@navikt/ds-react";
 import { HotjarLinks, EditSiteLinks, SiteimproveLinks, AmplitudeLinks } from "."
 
-function SiteAreaCards(props) {
+function SiteCards(props) {
     const siteUrl = props.siteUrl;
     return (
         <>
@@ -67,4 +67,4 @@ function SiteAreaCards(props) {
     );
 }
 
-export default SiteAreaCards;
+export default SiteCards;
