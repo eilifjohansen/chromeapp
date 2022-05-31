@@ -71,8 +71,9 @@ function MySearch() {
 
       {!search && !value &&
         <>
-          <Button type="submit" size="xsmall" className="rediger card__micro" value="#analyse" onClick={() => setSearch("True") & setValue("") & setError("")}>Kategorier</Button>
-          <Button type="submit" size="xsmall" className="rediger card__micro" value="#hjelpeartikler" onClick={setCategory}>Hjelpeartikler</Button>
+          <Button type="submit" size="xsmall" className="rediger card__micro" value="#analyse" onClick={() => setSearch("True") & setValue("") & setError("")}>Kategorier</Button> 
+          {/* <Button type="submit" size="xsmall" className="rediger card__micro" value="#hjelpeartikler" onClick={setCategory}>Hjelpeartikler</Button> */}
+          {/* <Button type="submit" size="xsmall" className="rediger card__micro" value="#brukerinnsikt" onClick={setCategory}>Brukerinnsikt</Button> */}
         </>
       }
 
