@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Verktøy, Kategorier } from "../../data"
 import { LinkPanel, Link, Alert, Heading, SearchField, Button, Label } from "@navikt/ds-react";
 import { Search, Close } from "@navikt/ds-icons";
+import axios from "axios";
 
 function MySearch() {
   const [foundUsers, setFoundUsers] = useState(people);
@@ -15,6 +16,15 @@ function MySearch() {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
+
+    axios.get("https://reops-proxy.intern.nav.no/", { })
+        .then(response => {
+          console.log("Status: ", response.status);
+          console.log("Data: ", response.data);
+        }).catch(error => {
+      console.error('Something went wrong!', error);
+    });
+
     setSearchActivate("Active")
     // console.log(e.target[0].value);
     if (!e.target[0].value) {
