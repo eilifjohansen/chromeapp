@@ -1,6 +1,6 @@
 {
-  "short_name": "NAV Verktøy",
-  "name": "NAV Verktøy",
+  "short_name": "NAV Verktøysøk",
+  "name": "NAV Verktøysøk",
   "icons": {
     "16": "suitcase.png",
     "48": "suitcase.png",
@@ -13,6 +13,6 @@
   "version": "0.0.1",
   "action": {
     "default_popup": "index.html",
-    "default_title": "NAV Verktøy",
+    "default_title": "NAV Verktøysøk",
     "default_icon": "suitcase.png"  }
 }

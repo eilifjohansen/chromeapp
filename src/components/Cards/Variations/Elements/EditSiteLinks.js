@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "@navikt/ds-react";
+import React, {useState, useEffect} from "react";
+import {Link, LinkPanel} from "@navikt/ds-react";
 import axios from 'axios';
 
 function EditSiteCars(props) {
@@ -24,8 +24,8 @@ function EditSiteCars(props) {
                         setSiteError("Error, could not get URL");
                     }
                 }).catch(error => {
-                    console.error('Something went wrong!', error);
-                });
+                console.error('Something went wrong!', error);
+            });
         }
 
         if (siteUrl.match(/www.idebanken.org/) && !siteUrl.match(/siteimprove.com/)) {
@@ -43,8 +43,8 @@ function EditSiteCars(props) {
                     }
 
                 }).catch(error => {
-                    console.error('Something went wrong!', error);
-                });
+                console.error('Something went wrong!', error);
+            });
         }
 
         if (siteUrl.match('aksel.nav.no/artikkel') && !siteUrl.match('aksel.nav.no/designsystem')) {
@@ -61,8 +61,8 @@ function EditSiteCars(props) {
                         setSiteError("Error, could not get URL");
                     }
                 }).catch(error => {
-                    console.error('Something went wrong!', error);
-                });
+                console.error('Something went wrong!', error);
+            });
         }
 
         if (siteUrl.match('aksel.nav.no/tema') && !siteUrl.match('aksel.nav.no/designsystem')) {
@@ -79,8 +79,8 @@ function EditSiteCars(props) {
                         setSiteError("Error, could not get URL");
                     }
                 }).catch(error => {
-                    console.error('Something went wrong!', error);
-                });
+                console.error('Something went wrong!', error);
+            });
         }
 
         if (siteUrl.match('aksel.nav.no/blogg') && !siteUrl.match('aksel.nav.no/designsystem')) {
@@ -97,8 +97,8 @@ function EditSiteCars(props) {
                         setSiteError("Error, could not get URL");
                     }
                 }).catch(error => {
-                    console.error('Something went wrong!', error);
-                });
+                console.error('Something went wrong!', error);
+            });
         }
 
         if (siteUrl.match('aksel.nav.no/designsystem') && !siteUrl.match(/siteimprove.com/)) {
@@ -120,45 +120,64 @@ function EditSiteCars(props) {
                     }
 
                 }).catch(error => {
-                    console.error('Something went wrong!', error);
-                });
+                console.error('Something went wrong!', error);
+            });
         }
     })
     return (
         <>
-            {siteUrl.match('www.nav.no/sosialhjelp') &&
-                <li><Link target="_blank" href="https://sosialhjelp-veiviser.sanity.studio/production/desk" rel="noreferrer">Sanity CMS</Link></li>
+            {siteRedirectUrl && siteUrl.match(/www.nav.no/) &&
+                <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Rediger siden
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
-            {siteUrl.match('familie.nav.no') &&
+            {/*            {siteUrl.match('www.nav.no/sosialhjelp') &&
+                <li><Link target="_blank" href="https://sosialhjelp-veiviser.sanity.studio/production/desk" rel="noreferrer">Sanity CMS</Link></li>
+            }*/}
+
+            {/*            {siteUrl.match('familie.nav.no') &&
                 <li><Link target="_blank" href="https://portal-admin.oera.no/admin/tool" rel="noreferrer">Enonic CMS</Link></li>
             }
 
             {siteUrl.match('www.nav.no/okonomi-og-gjeld') &&
                 <li><Link target="_blank" href="https://www.nav.no/okonomi-og-gjeld/studio/desk" rel="noreferrer">Sanity CMS</Link></li>
-            }
-
-            {siteUrl.match('www.nav.no/arbeid') &&
-                <li><Link target="_blank" href="https://nav-inkludering.sanity.studio/desk" rel="noreferrer">Sanity CMS</Link></li>
-            }
-
-            {siteRedirectUrl && siteUrl.match(/www.nav.no/) && !siteUrl.match('no/arbeid') &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic CMS</Link></li>
-            }
+            }*/}
 
             {siteRedirectUrl && siteUrl.match('aksel.nav.no/designsystem') &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Sanity CMS</Link></li>
+                <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Rediger siden
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteUrl.match(/aksel.nav.no/) && !siteUrl.match('aksel.nav.no/designsystem') &&
                 <>
-                    {siteRedirectUrl ? (<li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Sanity CMS</Link></li>) : (<li><Link target="_blank" href="https://verktoykasse.sanity.studio/desk" rel="noreferrer">Sanity CMS</Link></li>)
+                    {siteRedirectUrl ? (
+                        <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+                            <LinkPanel.Title>
+                                Rediger siden
+                            </LinkPanel.Title>
+                        </LinkPanel>) : (
+                        <LinkPanel className="rediger" href="https://verktoykasse.sanity.studio/desk" target="_blank"
+                                   rel="noreferrer">
+                            <LinkPanel.Title>
+                                Rediger siden
+                            </LinkPanel.Title>
+                        </LinkPanel>)
                     }
                 </>
             }
 
             {siteRedirectUrl && siteUrl.match(/idebanken.org/) &&
-                <li><Link target="_blank" href={siteRedirectUrl} rel="noreferrer">Enonic CMS</Link></li>
+                <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Rediger siden
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
         </>
     );

@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "@navikt/ds-react";
+import {LinkPanel} from "@navikt/ds-react";
 
 function AmplitudeLinks() {
-    return (
-        <li><Link target="_blank" href="https://analytics.amplitude.com/nav/workspace">Amplitude</Link> (webstatistikk)</li>
-    );
+    return (<LinkPanel className="rediger" href="https://analytics.eu.amplitude.com/nav/team-spaces?source=sidebar"
+                       target="_blank" rel="noreferrer">
+            <LinkPanel.Title>
+                Webstatistikk
+            </LinkPanel.Title>
+        </LinkPanel>);
 }
 
 export default AmplitudeLinks;
