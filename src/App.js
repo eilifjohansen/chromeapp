@@ -19,7 +19,7 @@ function App() {
         <div className="App">
             <Header />
             <div id="cards" className="site-info enonic">
-                <Search/>
+                <Search siteUrl={siteUrl}/>
                 <Cards siteUrl={siteUrl}/>
             </div>
         </div>

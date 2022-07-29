@@ -8,7 +8,7 @@ function ToolInfoCards(props) {
             {siteUrl.match('siteimprove.com') &&
                 <Panel border className="rediger">
                     <Heading spacing size="small" level="2">
-                        Siteimprove
+                        <Link target="_blank" href="https://my2.siteimprove.com/Auth/Saml2/6274809">Siteimprove</Link>
                     </Heading>
                     <p className="rediger">Siteimprove gir oss en oversikt over problemer og forbedringsområder i forhold til: kvalitetssikring av innhold, universell utforming og søketrafikk.</p>
                     <ul>

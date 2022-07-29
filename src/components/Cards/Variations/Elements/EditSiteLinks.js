@@ -134,18 +134,6 @@ function EditSiteCars(props) {
                 </LinkPanel>
             }
 
-            {/*            {siteUrl.match('www.nav.no/sosialhjelp') &&
-                <li><Link target="_blank" href="https://sosialhjelp-veiviser.sanity.studio/production/desk" rel="noreferrer">Sanity CMS</Link></li>
-            }*/}
-
-            {/*            {siteUrl.match('familie.nav.no') &&
-                <li><Link target="_blank" href="https://portal-admin.oera.no/admin/tool" rel="noreferrer">Enonic CMS</Link></li>
-            }
-
-            {siteUrl.match('www.nav.no/okonomi-og-gjeld') &&
-                <li><Link target="_blank" href="https://www.nav.no/okonomi-og-gjeld/studio/desk" rel="noreferrer">Sanity CMS</Link></li>
-            }*/}
-
             {siteRedirectUrl && siteUrl.match('aksel.nav.no/designsystem') &&
                 <LinkPanel className="rediger" href={siteRedirectUrl} target="_blank" rel="noreferrer">
                     <LinkPanel.Title>
@@ -170,6 +158,14 @@ function EditSiteCars(props) {
                         </LinkPanel>)
                     }
                 </>
+            }
+
+            {siteUrl.match(/deterdinpensjon.no/) &&
+                <LinkPanel className="rediger" href="https://www.deterdinpensjon.no/wp-admin" target="_blank" rel="noreferrer">
+                    <LinkPanel.Title>
+                        Rediger siden
+                    </LinkPanel.Title>
+                </LinkPanel>
             }
 
             {siteRedirectUrl && siteUrl.match(/idebanken.org/) &&

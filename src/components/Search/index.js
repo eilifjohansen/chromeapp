@@ -4,7 +4,8 @@ import {LinkPanel, Link, Alert, Heading, SearchField, Button, Label} from "@navi
 import {Search, Close} from "@navikt/ds-icons";
 import axios from "axios";
 
-function MySearch() {
+function MySearch(props) {
+    const siteUrl = props.siteUrl;
     const [foundUsers, setFoundUsers] = useState(people);
     const [value, setValue] = useState("");
     const [search, setSearch] = useState("");
@@ -140,7 +141,9 @@ function MySearch() {
                             }
                         </>
                     )}
-                    <hr className="rediger"/>
+                    {siteUrl.match('www.nav.no') &&
+                        <hr className="rediger"/>
+                    }
                 </div>
             }
         </>
